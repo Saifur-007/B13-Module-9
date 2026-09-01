@@ -10,9 +10,12 @@
     <!-- Navigation Bar & Hero Section -->
     <header class="header">
         <!-- Navigation Bar -->
-        <nav>
+        <nav class="navbar">
             <h2 class="logo">G3 Architects</h2>
-            <div>
+            <div class="nav-links-container">
+                <div class="mobile-menu-button" aria-label="Open navigation menu">
+                    <img src="./images/icons/menu.png" alt="Menu">
+                </div>
                 <ul class="nav-links">
                     <li><a href="#" target="_blank">Home</a></li>
                     <li><a href="#" target="_blank">About</a></li>
@@ -25,7 +28,9 @@
         <section class="hero">
             <div class="hero_content">
                 <div class="hero_content_text">
-                    <h1>Brand New Group of Architects</h1>
+                    <h1>Brand New<br class="desktop-title-break">
+                        Group of <span class="responsive-title-break">Architects</span>
+                    </h1>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                 </div>
                 <button class="hero_button">Explore More</button>
