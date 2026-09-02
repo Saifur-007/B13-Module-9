@@ -52,7 +52,6 @@
 .nav-links a:hover{
     color: var(--Primary-01, #1A73E8);
 }
-
 /* Hero Section */
 .hero{
     display: flex;
@@ -187,8 +186,7 @@
     line-height: 26px; /* 162.5% */
 }
 .our_features_button{
-    width: 180px;
-    height: 64px;
+    padding: 20px 24px;
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
@@ -201,11 +199,11 @@
     border: none;
 }
 
+
 /* Tablet Screen (max-width: 768px) */
 
 @media (max-width: 768px) {
 
-    
     .header{
         display: flex;
         padding: 28px 48px 42px 48px;
@@ -214,6 +212,7 @@
         gap: 28px;
         align-self: stretch;
     }
+    /* Navigation Bar */
     .navbar{
         width: 100%;
         padding: 0;
@@ -231,6 +230,7 @@
     .nav-links a{
         font-size: 16px;
     }
+    /* Hero Section */
     .hero{
         flex-direction: column;
         align-items: center;
@@ -264,6 +264,42 @@
         width: 100%;
         height: auto;
     }
+    /* Our Features Section */
+    .our_features_section{
+        gap: 34px;
+        padding: 72px 48px;
+    }
+    .grid_container_imgs{
+        gap: 16px;
+    }
+    .grid_container_imgs img{
+        width: 156px;
+        height: 156px;
+    }
+    .our_features_content{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        gap: 20px;
+    }
+    .our_features_content h2{
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .our_features_content p{
+        align-self: stretch;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 160% */
+    }
+    .our_features_button{
+        padding: 18px 24px;
+        font-size: 18px;
+    }
+
 }
 
 /* Mobile Screen (max-width: 390px) */
@@ -273,6 +309,7 @@
         padding: 24px 20px 32px 20px;
         gap: 24px;
     }
+    /* Navigation Bar */
     .nav-links {
         display: none;
     }
@@ -292,6 +329,7 @@
     .logo{
         font-size: 25px;
     }
+    /* Hero Section */
     .hero_content_text h1{
         font-size: 36px;
         text-align: center;
@@ -305,4 +343,6 @@
         font-weight: 400;
         line-height: 24px; /* 160% */
     }
+    /* Our Features Section */
+
 }
