@@ -416,7 +416,81 @@
         padding: 18px 24px;
         font-size: 18px;
     }
-
+    .features_you_will_love_section{
+        display: grid;
+        grid-template-columns: 320px 324px;
+        row-gap: 34px;
+        column-gap: 28px;
+        gap: 34px;
+        padding: 62px 48px;
+        align-items: start;
+    }
+    .features_you_will_love_content {
+        display: contents;
+    }
+    .features_you_will_love_content_heading h3 {
+        width: auto;
+        flex: 1;
+        font-size: 38px;
+        white-space: nowrap;
+    }
+    .features_you_will_love_content_heading_section {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    .features_you_will_love_content_heading_section {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    .features_you_will_love_content_heading_section {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    .features_you_will_love_content_heading {
+        width: 100%;
+        gap: 18px;
+    }
+    .features_you_will_love_content_text_section {
+        width: 100%;
+        padding: 20px;
+    }
+    .features_you_will_love_content_text_section h4{
+        font-size: 18px;
+    }
+    .features_you_will_love_content_text_section p{
+        font-size: 14px;
+    }
+    .features_you_will_love_image{
+        width: 324px;
+        height: 450px;
+    }
+    .features_you_will_love_image img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .features_you_will_love_image_overlay {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin: 0;
+        padding: 18px 20px;
+    }
+    .features_you_will_love_image_overlay h4{
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .features_you_will_love_image_overlay p{
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 }
 
 /* Mobile Screen (max-width: 390px) */
