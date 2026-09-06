@@ -134,7 +134,9 @@
     gap: 70px;
     justify-content: center;
     align-items: center;
-    padding: 85px 300px 130px;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 100px 0px;
 }
 .grid_container_imgs{
     display: grid;
@@ -206,7 +208,9 @@
     justify-content: center;
     align-items: center;
     gap: 146px;
-    padding: 100px 240px 50px;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 100px 0px;
 }
 .features_you_will_love_content{
     display: flex;
@@ -315,7 +319,75 @@
     line-height: 40px;
 }
 
+/* Facts Section */
 
+.fact_section{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 100px 0px;
+}
+.fact_section_text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 542px;
+}
+.fact_section_text h4{
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.fact_section_text p{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.fact_section_boxes{
+    display: flex;
+    justify-content: space-evenly;    
+}
+.fact_section_box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    height: 242px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+.fact_section_box h5{
+    color: var(--Dark-02, #424242);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.fact_section_box p{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.fact_section_box img{
+    width: 46px;
+    height: 46px;
+}
 
 /* Tablet Screen (max-width: 768px) */
 
@@ -385,6 +457,7 @@
     .our_features_section{
         gap: 34px;
         padding: 72px 48px;
+        width: 100%;
     }
     .grid_container_imgs{
         gap: 16px;
@@ -416,6 +489,9 @@
         padding: 18px 24px;
         font-size: 18px;
     }
+
+    /* Features you will love Section */
+
     .features_you_will_love_section{
         display: grid;
         grid-template-columns: 320px 324px;
@@ -424,6 +500,7 @@
         gap: 34px;
         padding: 62px 48px;
         align-items: start;
+        width: 100%;
     }
     .features_you_will_love_content {
         display: contents;
@@ -491,6 +568,23 @@
         font-weight: 500;
         line-height: normal;
     }
+
+    /* Facts Section */
+
+    .fact_section{
+        width: 100%;
+        padding: 62px 48px;
+        gap: 26px;
+    }
+    .fact_section_boxes{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .fact_section_box{
+        width: 100%;
+        height: 170px;  
+    }
 }
 
 /* Mobile Screen (max-width: 390px) */
@@ -534,6 +628,69 @@
         font-weight: 400;
         line-height: 24px; /* 160% */
     }
+    
     /* Our Features Section */
+    
+    .our_features_section{  
+        flex-direction: column;
+        gap: 24px;
+        padding: 44px 20px;
+    }
+
+    /* Features Section */
+    
+    .features_you_will_love_section{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 44px 20px;
+    }
+    .features_you_will_love_content_heading h3{
+        font-size: 30px;
+        white-space: normal;
+    }
+    .features_you_will_love_image{
+        width: 100%;
+        gap: 24px;
+    }
+    .features_you_will_love_image_overlay{
+        padding: 16px 18px;
+    }
+
+    /* Facts Section */
+
+    .fact_section{
+        width: 100%;
+        padding: 180px 20px;
+        gap: 20px;
+    }
+    .fact_section_text{
+        width: 100%;
+    }
+    .fact_section_text h4{
+        font-size: 30px;
+    }
+    .fact_section_text p{
+        font-size: 15px;
+    }
+    .fact_section_boxes{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+    .fact_section_box{
+        width: 100%;
+        height: 142px;  
+    }
+    .fact_section_box img{
+        width: 42px;
+        height: 42px;
+    }
+    .fact_section_box h5{
+        font-size: 28px;
+    }
+    .fact_section_box p{
+        font-size: 16px;
+    }
 
 }
